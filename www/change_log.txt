@@ -1,0 +1,20 @@
+v2.1.0
+jQuery mobile changed to version 1.4.5 - CHANGED
+PhoneGap version change to cli-5.2.0 - CHANGED
+All plugins updated and converted to use npm as source - CHANGED
+Social message plugin replaced with x-socialsharing plugin - FIXED/CHANGED
+PG ios version set to use 3.9.2 for iOS 9 compatibility - FIXED/CHANGED
+Config.xml updated to latest standards - CHANGED
+Blog page header has a red border - FIXED
+Fav page search does not work - FIXED
+Back button on iOS 9 not working - FIXED
+
+v2.0.1
+Locations at the top of the list unable to be set if load more locations used - FIXED
+Current location always shown on the top of the locations page - ADDED
+Add listing page CSS fixed to comply with iOS review system - FIXED
+Version numbers added to PG addons to avoid breaking builds if addons are updated - CHANGED
+On small devices the title can overlap the back button text - FIXED
+
+v2.0.0 - BETA
+Beta release

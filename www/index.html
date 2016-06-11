@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading-app">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>GeoTheme</title>
+<style>.loading-app{background-image:url("css/themes/default/images/ajax-loader.gif")!important;background-repeat:no-repeat!important;background-position:center center!important;}</style>
+<link rel="stylesheet" href="css/themes/default/jquery.mobile.min.css">
+<link rel="stylesheet" href="css/style.css" />
+<script src="cordova.js"></script>
+<script src="js/constants.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/init.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+<script src="js/jquery.gallery.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+var ss1 = document.createElement('style');
+var def = '.ui-header .ui-title  { color:'+ MAIN_TITLE_TEXT +' }.ui-btn-gt, .ui-btn-gt:hover, .ui-header .ui-toolbar-back-btn, .ui-header .ui-toolbar-back-btn:hover{ color:'+ MAIN_NAV_TEXT +' !important }.ui-listing-actions .ui-block-a > .ui-btn { color:'+ MAIN_BUTTON_TEXT +'; background-color: '+ LISTING_ACTION_BUTTON_BG +' }.ui-filter-box .ui-btn-filter, .ui-filter-box .ui-btn-filter:hover { border: 1px solid '+ MAIN_SORT_BORDER +' !important} body .ui-filter-box .ui-btn-filter-last, body .ui-filter-box .ui-btn-filter-last:focus, body .ui-filter-box .ui-btn-filter-last:hover{ border-right: 1px solid '+ MAIN_SORT_BORDER +' !important} .page-list-categs .ui-result-set li h2 { color:'+ CATEGORY_TITLE_TEXT +' }.page-list-categs .ui-result-set li .ui-li-count { color:'+ CATEGORY_COUNT_TEXT +' } .ui-result-set li h2 { color:'+ LISTING_TITLE_TEXT +' } body .ui-result-set li p { color:'+ LISTING_MAIN_TEXT +' } .page-view-listing .ui-listing-header, .page-view-listing .ui-listing-address, .page-view-listing .ui-listing-image, .page-view-listing .ui-listing-desc, .page-view-listing .ui-listing-offers, .page-view-listing .ui-listing-custom, .page-view-comment .ui-comment-image, .page-view-comment .ui-comment-desc { border-bottom: 1px solid #FFFFFF !important} .ui-listing-links .ui-listview li > .ui-btn { background-color:'+ DETAILS_MORE_INFO_BG_COLOR +' !important } .page-view-listing .ui-listing-header .ui-block-a {color:'+ DETAILS_TITLE_TEXT +'} .ui-block-a > p {color: '+ DETAILS_MAIN_TEXT +'} .ui-listing-comments .ui-listview .ui-li-has-thumb > a {background-color: '+ REVIEWS_BG +' !important} .ui-alt-icon.show-tht-page-load.ui-btn {border-color: '+ REVIEWS_BORDER +' !important} .ui-listing-comments .ui-listview .ui-li-has-thumb > a h2 {color: '+ REVIEWS_TITLE_TEXT +'} .ui-listing-comments .ui-listview .ui-li-has-thumb > a p {color: '+ REVIEWS_MAIN_TEXT +'} .ui-listing-comments .ui-listview .ui-li-has-thumb > a p.comment-more {color: '+ REVIEWS_MORE_TEXT +' !important} #home > .ui-content { } #container > div[data-role="page"], #container > div[data-role="page"] > div[data-role="header"] { } body .ui-page-theme-a .ui-header {border-color: '+ H_TOP_BORDER +'}  .main-menu #home-events-categs {color: '+ H_BTN_EVE_TEXT +' !important} .main-menu #home-favourites {color: '+ H_BTN_FAV_TEXT +' !important} .main-menu #home-places-categs {color: '+ H_BTN_PLA_TEXT +' !important} .main-menu #home-blog-categs {color: '+ H_BTN_BLO_TEXT +' !important} .main-menu #home-location {color: '+ H_BTN_LOC_TEXT +' !important} .main-menu #home-account {color: '+ H_BTN_ACC_TEXT +' !important} #about .ui-content { background-color: '+ A_BG_MAIN +' } #about .ui-header.ui-bar-inherit.ui-header-fixed.slidedown  { background-color: '+ A_BG_TOP +';border-bottom: 1px solid '+ A_TOP_BORDER +' !important } #favourites .ui-header.ui-bar-inherit.ui-header-fixed.slidedown  { background-color: '+ F_BG_TOP +';border-bottom: 1px solid '+ F_TOP_BORDER +' !important } #places-categs .ui-header.ui-bar-inherit.ui-header-fixed.slidedown  { background-color: '+ P_BG_TOP +';border-bottom: 1px solid '+ P_TOP_BORDER +' !important } #events-categs .ui-header.ui-bar-inherit.ui-header-fixed.slidedown  { background-color: '+ E_BG_TOP +';border-bottom: 1px solid '+ E_TOP_BORDER +' !important } #blog-categs .ui-header.ui-bar-inherit.ui-header-fixed.slidedown  { background-color: '+ B_BG_TOP +';border-bottom: 1px solid '+B_TOP_BORDER+' !important } #location .ui-header.ui-bar-inherit.ui-header-fixed.slidedown  { background-color: '+ L_BG_TOP +';border-bottom: 1px solid '+ L_TOP_BORDER +' !important } #account .ui-header.ui-bar-inherit.ui-header-fixed.slidedown  { background-color: '+ AS_BG_TOP +';border-bottom: 1px solid '+ AS_TOP_BORDER +' !important } .ui-input-search input { background-color: '+ LISTING_SEARCH_BG_COLOR +'} .ui-filter-box .ui-block-a { border-bottom: 1px solid '+ SORT_BORDER_COLOR +' !important}';
+ss1.setAttribute("type", "text/css");
+var hh1 = document.getElementsByTagName('head')[0];
+hh1.appendChild(ss1);
+if (ss1.styleSheet) {   // IE
+    ss1.styleSheet.cssText = def;
+} else {                // the world
+    var tt1 = document.createTextNode(def);
+    ss1.appendChild(tt1);
+}
+</script>
+</head>
+<body><div id="fb-root"></div>
+<div id="container"></div>
+<script type="text/javascript">app.initialize();</script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true" type="text/javascript"></script>
+</body>
+</html>
